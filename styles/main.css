@@ -5,6 +5,10 @@ body {
 ul {
     list-style-type: none;
 }
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
 .container {
     max-width: 1326px;
 }
@@ -17,7 +21,7 @@ ul {
     margin: 0 auto;
 }
 .header-logo {
-    display:block;   
+    
 }
 .header-nav {
     display:flex;
@@ -30,9 +34,17 @@ ul {
     display:flex;
     gap:30px;
 }
-
-.main-screen-img { 
-    background-image: url(../img/girl.png);
-    width: 996px;
-    height: 930px;
+.main-screen-box {
+    display: flex;
+}
+.main-screen-item {
+    display:flex;
+    flex-direction: column;
+}
+.training {
+    font-weight: 400;
+    font-size: 40px;
+}
+.main-screen-img img {
+    scale: 50%;
 }
