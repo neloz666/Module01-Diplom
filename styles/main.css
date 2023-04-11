@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+.container {
+    max-width: 1326px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1147px;
+    margin: 0 auto;
+}
+.header-logo {
+    display:block;   
+}
+.header-nav {
+    display:flex;
+    font-weight: 400;
+    font-size: 18px;
+    gap:54px;
+}
+
+.social-list {
+    display:flex;
+    gap:30px;
+}
