@@ -1,0 +1,20 @@
+body {
+
+}
+ul {
+    list-style-type: none;
+}
+.header-item {
+    display: flex;
+}
+.header-logo {
+    display: block;
+    background-image: url(/Module01-Diplom/img/logo.svg);
+    
+}
+.header-nav {
+    display:flex;
+}
+.social-list {
+    display:flex;
+}
