@@ -4,10 +4,26 @@ body {
 
 ul {
     list-style-type: none;
+    
 }
 h1 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 700;
     font-size: 48px;
+    line-height: 125%;
+    /* or 60px */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin:0;
+    padding:0;
 }
 .container {
     max-width: 1326px;
@@ -19,6 +35,7 @@ h1 {
     justify-content: space-between;
     max-width: 1147px;
     margin: 0 auto;
+    
 }
 .header-logo {
     
@@ -27,7 +44,9 @@ h1 {
     display:flex;
     font-weight: 400;
     font-size: 18px;
+    color: #2B3541;
     gap:54px;
+    margin-left: -297px;
 }
 
 .social-list {
@@ -36,15 +55,87 @@ h1 {
 }
 .main-screen-box {
     display: flex;
+    margin-top: 30px;
+    margin-left:30px;
+    margin-bottom: 418px;
 }
 .main-screen-item {
     display:flex;
     flex-direction: column;
+    width:676px;
+    height:375px;
+    margin-top:204px;
+    margin-left:62px;
 }
-.training {
+.main-screen-training {
+    display:flex;
+    gap:16px;
+}
+.main-screen-text {
     font-weight: 400;
     font-size: 40px;
+    line-height: 125%;
+    margin-bottom: 22px;
+
+}
+.main-screen-help-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom:34px;
+}
+
+
+.main-screen-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    padding: 20px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #FBF138;
+    border:none;
+    
+}
+.arrow {
+    display:block;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:49px;
+    height:49px;
+    border: 3px solid #2B3541;
+    border-radius: 50%;
+    position: absolute;
+    left: 96px;
+    top:875px;
+
+}
+.main-screen-training {
+    margin:0;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+   
+
+
+color: #2B3541;
 }
 .main-screen-img img {
-    scale: 50%;
+    
+    background-size: cover;
+    Width: 996px;
+    position:absolute;
+    left:423px;
+    top:112px;
+    background-color: transparent;
+
+
+}
+.main-screen-img-background {
+    width: 464px;
+    height:850px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(GIRL.png);
+    opacity: 0.2;
 }
