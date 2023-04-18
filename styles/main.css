@@ -48,7 +48,9 @@ a {
     align-items: center;
     justify-content: space-between;
     max-width: 1147px;
-    margin: 0 auto;
+    margin: 0;
+    margin-right:96px;
+    margin-left:88px;
     
 }
 
@@ -58,12 +60,15 @@ a {
     font-size: 18px;
     color: #2B3541;
     gap:54px;
-    margin-left: -297px;
+    margin-left: -308px;
+    
 }
+
 
 .social-list {
     display:flex;
     gap:30px;
+    
 }
 .main-screen-box {
     display: flex;
@@ -76,8 +81,8 @@ a {
     flex-direction: column;
     width:676px;
     height:375px;
-    margin-top:204px;
-    margin-left:62px;
+    margin-top:207px;
+    margin-left:59px;
 }
 .main-screen-training {
     display:flex;
@@ -121,7 +126,7 @@ a {
     border-radius: 50%;
     position: absolute;
     left: 96px;
-    top:875px;
+    top:881px;
 
 }
 .main-screen-training {
@@ -155,7 +160,7 @@ color: #2B3541;
 .upcoming-events-box {
     margin-left:85px;
     max-width: 1143px;
-    margin-bottom: 160px;
+    margin-bottom: 162px;
 }
 .upcoming-events-title {
     
@@ -171,7 +176,9 @@ color: #2B3541;
 }
 .upcoming-events-grid li:nth-child(1) {
     background-image: url(../img/events/marathon.png); 
-}
+    background-color: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.3;
+ }
 .upcoming-events-grid li:nth-child(2) {
     background-image: url(../img/events/Vebinar.png); 
     
@@ -180,7 +187,9 @@ color: #2B3541;
     background-image: url(../img/events/yoga.png); 
     
 }
-
+.upcoming-events-grid-item img {
+    
+}
 .upcoming-events-grid-item {
     display: flex;
     flex-direction: column;
@@ -246,7 +255,7 @@ color: #2B3541;
 .shedule-box {
     max-width: 1143px;
     margin-left:85px;
-    margin-bottom: 146px;
+    margin-bottom: 163px;
 }
 .shedule-header {
     display:flex;
@@ -359,19 +368,11 @@ max-width: 356px;
 .subscribe-box {
     max-width: 1920px;
     background: #F3F3F3;
-    position:relative;
-}
-.subscribe-circle {
-    width: 53px;
-    height:53px;
-    background: #FBF138;
-    border-radius: 50%;
-    position:absolute;
-    left:330px;
-    top: 60px;
+  
     
 }
 .subscribe-title {
+    position:relative;
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
@@ -380,7 +381,18 @@ max-width: 356px;
     padding-top: 77px;
     margin-bottom: 41px;
     margin-left:-13px;
-   
+} 
+.subscribe-circle {
+    width: 53px;
+    height:53px;
+    background: #FBF138;
+    border-radius: 50%;
+    position:absolute;
+    left:330px;
+    bottom: -1083px;
+    z-index:1;
+    
+    
 }
 
 .subscribe-item {
@@ -512,11 +524,12 @@ label {
 .about-box {
     width: 1142px;
     margin-left:85px;
+    margin-bottom: 155px;
 }
 .about-top {
     display: flex;
     gap: 77px;
-    margin-bottom: 63px;
+    margin-bottom: 67px;
 }
 .about-text {
     display: flex;
@@ -556,8 +569,21 @@ label {
     display:flex;
     gap:67px;
     justify-content: space-between;
- 
 }
+.about-company-list li:nth-child(1) {
+    width: 362px;
+    
+}
+.about-company-list li:nth-child(3) {
+    width: 317px;
+    padding-left:10px;
+}
+.about-company-list li:nth-child(4) {
+    padding-left:18px;
+}
+
+ 
+
 .about-list-title {
     font-weight: 700;
     font-size: 18px;
@@ -569,6 +595,75 @@ label {
     font-size: 18px;
     line-height: 150%;
 }
+.footer-box {
+max-width: 1920px;
+
+}
+.footer-list {
+    display:flex;
+    margin-left: -28px;
+    margin-top: -2px;
+    padding-top:33px;
+    padding-bottom:42px;
+    padding-left:110px;
+    padding-right: 102px;
+    justify-content: space-between;
+    background: #F3F3F3;
+    align-items: center;
+    
+   
+  
+}
+
+.footer-nav-list {
+    display: flex;
+    gap:90px;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left:10px;
+    margin-left: -151px;
+}
+.footer-social-list {
+    display: flex;
+    gap:30px;
+}
+.footer-social-list li:nth-child(1) {
+    padding-top:5px;
+}
+   
+
+.footer-social-list-item img {
+    width: 27px;
+    height:27px;
+}
+.footer-mail {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2B3541;
+    margin-right: 30px;
+   
+    
+}
+.footer-mail-text {
+    vertical-align: bottom;
+}
+.footer-copyright {
+    display:flex;
+    gap:508px;
+    margin-left:80px;
+    margin-top:-31px;
+
+}
+.footer-copyright-text {
+    width:400px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.3;
+}
+
 
 
 
