@@ -17,7 +17,12 @@
         <div class="container">
             <div class="header">
                 <div class="header-item">
-                    <a href="#" class="header-logo" alt="Logo"><img src="img/logo.svg"></a>
+                    <a href="#" class="header-logo" alt="Logo">
+                        <img src="img/logo.svg" class="header-logo-img">
+                    </a>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                     <nav>
                      <ul class="header-nav">
                         <li><a href="#">Мероприятие</a></li>
@@ -44,18 +49,20 @@
             <div class="main-screen-item">
                 <h1>Онлайн тренировки <br> любой сложности</h1>
                 <div class="main-screen-training">
-                    <p class="main-screen-text">
-                    &gt 15
-                    </p>
-                    <div class="main-screen-help-item">
-                        <p class="main-screen-text">тренировок</p>
-                        <p class="main-screen-help-text">в области спортивной <br> физиологии и нутрициологии</p>
-                        <button type="button" class="main-screen-button">
-                        Узнать поподробнее
-                        </button>
-                    </div>    
+                        <p class="main-screen-text">
+                        &gt 15
+                        </p>
+                        <p class="main-screen-text">
+                            тренировок
+                        </p>
                 </div>
-                <a class="arrow"></a> 
+                <div class="main-screen-help-item">
+                    <p class="main-screen-help-text">в области спортивной физиологии и нутрициологии</p>
+                    <button type="button" class="main-screen-button">
+                    Узнать поподробнее
+                    </button>
+                </div>    
+                <a href="#next" class="arrow"></a> 
             </div>  
             <div class="main-screen-img">
                 <img src="img/girl.png" class="main-screen-img" alt="running girl">
@@ -67,7 +74,7 @@
     <section class="upcoming-events">
         <div class="container">
             <div class="upcoming-events-box">
-                <h2 class="upcoming-events-title">Ближайшие события</h2>
+                <h2 class="upcoming-events-title" id="next" >Ближайшие события</h2>
                 <div class="upcoming-events-item">
                     <ul class="upcoming-events-grid">
                         <li class="upcoming-events-grid-item">
@@ -244,7 +251,36 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <ul class="header-nav">
+            <li><a href="#" class="header-logo" alt="Logo"><img src="img/logo.svg"></a></li>
+            <li><a href="#">Мероприятие</a></li>
+            <li><a href="#">Расписание</a></li>
+            <li><a href="#">О компании</a></li>
+         </ul>
+         <ul class="social-list">
+            <li class="social-list-item">
+               <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+            </li>
+            <li class="social-list-item">
+               <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+            </li>
+          </ul>
 
-    
+        <button class="burger-close" onclick="closeModal()">
+        </button>
+    </div>
+
+    <script>
+        // Menu
+
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
+        }    
+    </script>      
 </body>
 </html>

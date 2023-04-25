@@ -92,14 +92,19 @@ a {
     font-weight: 400;
     font-size: 40px;
     line-height: 125%;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
 }
+.main-screen-help-item {
+    margin-left:91px;
+}
 .main-screen-help-text {
+    width:297px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     margin-bottom:34px;
+    
 }
 
 
@@ -120,13 +125,13 @@ a {
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    width:49px;
-    height:49px;
+    width:32px;
+    height:32px;
     border: 3px solid #2B3541;
     border-radius: 50%;
     position: absolute;
-    left: 96px;
-    top:881px;
+    left: 18px;
+    top:469px;
 
 }
 .main-screen-training {
@@ -134,27 +139,34 @@ a {
     font-weight: 400;
     font-size: 40px;
     line-height: 125%;
-   
+    color: #2B3541;
+}
+.main-screen-img {
+    position:relative;
 
-
-color: #2B3541;
 }
 .main-screen-img img {
     
-    background-size: cover;
     Width: 996px;
+    height:850px;
     position:absolute;
-    left:426px;
-    top:81px;
-    background-color: transparent;
+    right:-172px;
+    top:21px;
+    object-fit:cover;
+    overflow:hidden;
+    z-index: 1;
+    object-position: 100px 100px;
+    
 
 
 }
 .main-screen-img-background {
     width: 464px;
     height:850px;
-    linear-gradient:(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    margin-top: -23px;
+    background-image: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
+    
 }
 
 .upcoming-events-box {
@@ -174,22 +186,31 @@ color: #2B3541;
 .upcoming-events-grid li {
     position: relative;
 }
+.upcoming-events-grid li::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #00000030;
+
+
+}   
 .upcoming-events-grid li:nth-child(1) {
-    background-image: url(../img/events/marathon.png); 
-    background-color: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.3;
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%),url(../img/events/marathon.png); 
+
  }
+
 .upcoming-events-grid li:nth-child(2) {
-    background-image: url(../img/events/Vebinar.png); 
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%),url(../img/events/Vebinar.png); 
     
 }
 .upcoming-events-grid li:nth-child(3) {
-    background-image: url(../img/events/yoga.png); 
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%),url(../img/events/yoga.png); 
     
 }
-.upcoming-events-grid-item img {
-    
-}
+
 .upcoming-events-grid-item {
     display: flex;
     flex-direction: column;
@@ -200,8 +221,8 @@ color: #2B3541;
     
 }
 .upcoming-events-grid-item:hover {
-    background-color: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.6;
+    background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    
 }
 .upcoming-events-grid-item:hover .upcomming-events-btn {
     opacity: 1;
@@ -381,6 +402,7 @@ max-width: 356px;
     padding-top: 77px;
     margin-bottom: 41px;
     margin-left:-13px;
+    z-index:2;
 } 
 .subscribe-circle {
     width: 53px;
@@ -388,8 +410,8 @@ max-width: 356px;
     background: #FBF138;
     border-radius: 50%;
     position:absolute;
-    left:330px;
-    bottom: -1083px;
+    left:334px;
+    bottom: -1906px;
     z-index:1;
     
     
@@ -656,12 +678,162 @@ max-width: 1920px;
     margin-top:-31px;
 
 }
-.footer-copyright-text {
+.copyright-text {
     width:400px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     opacity: 0.3;
+}
+
+
+/* Responsive*/
+@media (min-width:1200px) {
+    .header-burger {
+        display:none;
+    }
+}
+@media (max-width:1199px) {
+    .container {
+        max-width:768px;
+    }
+    .header-nav {
+        display:none;
+    }
+    .main-screen-img img {
+        width:796px;
+    }
+
+    
+    
+    
+}    
+@media (max-width:769px) {
+    .header-item {
+        margin-left: 10px;
+        gap:10px;
+    }
+    .header-logo-img {
+        width:78px;
+        height:24px;
+        margin-right:46px;
+    }
+    .header-burger {
+        
+        margin-right:503px;
+    }
+    nav {
+        display:none;
+    }
+    .social-list {
+        gap:21px;
+    }
+    .social-list-item img {
+        width: 26px;
+        height:26px;
+    }
+    .main-screen-box {
+        margin:0;
+        width:359px;
+        padding-top:40px;
+        padding-left:10px;
+    }
+    .main-screen-item {
+        margin:0;
+    }
+    
+    h1 {
+        font-size: 26px;
+        width:360px;
+        margin-bottom: 43px;
+    }
+    .main-screen-training {
+        margin-bottom: -5px;
+    }
+    .main-screen-text {
+        font-size: 26px;
+    }
+    .main-screen-help-text {
+        font-size: 16px;
+        width:290px;
+        margin-bottom: 41px;
+    }
+
+    .header-nav {
+        display:none
+    }
+    .main-screen-img {
+        margin-top: 90px;
+        margin-right:53px;
+    }
+    .main-screen-img img {
+        width:399px;
+        left:367px;
+    }
+    .main-screen-img-background {
+        width: 996px;
+        height:850px;
+        margin-top:-100px;
+        background-image: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+        opacity: 0.2;
+        
+    }
+}
+
+/* Modal */
+
+.burger {
+    width: 29px;
+    height: 22px;
+    background-image: url(../img/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.modal {
+    background-color:#F3F3F3;
+    max-width: 587px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.modal .header-nav {
+    display:flex;
+    flex-direction: column;
+    align-items:center; 
+    
+    gap: 23px;
+    margin: 0;
+
+} 
+.modal a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2B3541;
+    text-decoration: none;
+}   
+
+.burger-close {
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 
